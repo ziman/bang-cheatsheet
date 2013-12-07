@@ -1,0 +1,137 @@
+\documentclass[a4paper,10pt,reqno]{amsart}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath, amsthm}
+%\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{fancyref}
+\usepackage{graphicx}
+\usepackage[margin=0.5in]{geometry}
+
+\usepackage{tgpagella}
+
+\newcommand{\card}[1]{\textsc{#1}}
+\newcommand{\col}[1]{\textit{#1}}
+\newcommand{\picto}[2]{\raisebox{-3mm}{\includegraphics[width=10mm]{#1}} & \hspace{-2mm} #2 \hspace{2mm}}
+
+\pagestyle{empty}
+\begin{document}
+\thispagestyle{empty}
+	{\huge \textsc{Bang!} cheatsheet} \\
+	\mbox{}\hrulefill{}
+
+	\section*{Pictograms}
+	
+	\begin{tabular}{clclclcl}
+		\picto{bang}{Bang!}
+		& \picto{miss}{Missed!}
+		& \picto{beer}{Add one life} 
+		& \picto{read-rules}{Read the rules}
+		\\
+		
+		\picto{draw}{Draw one card}
+		& \picto{discard}{Discard one card}
+		& \picto{plus1}{Farther by 1}
+		& \picto{minus1}{Closer by 1}
+		
+		\\		
+		
+		\picto{any-player}{Any player}
+		& \picto{all-players}{All players}
+		& \picto{range}{Any player in range}
+		& \picto{range1}{Distance of one}
+		
+	\end{tabular}
+	
+	\section*{High noon cards}
+	
+	\begin{description}	
+		\item[Benedizione] Blessing. For the duration of the whole round, all cards are of \col{hearts}.
+		\item[Città Fantasma] City of Ghosts. Dead players return to game for a single \emph{turn}.
+			They draw three cards instead of two and cannot die during their turn. At the end of
+			their turn, they die for good.
+		\item[Corsa all' Oro] Golden Fever. Players take turns in the reverse order; effects of cards
+			(like \card{Dynamite}) retain their original order.
+		\item[Sete]	Thirst. All players draw only one card at the beginning of their turn.
+		\item[I Dalton] Daltons. All players must discard one of their blue cards lying
+			on the table (if any).
+		\item[Il Dottore] Doctor. One life is added to the player(s) with the least number of lives.
+		\item[Il Reverendo] Reverend. Players may not use \card{Beer}.
+		\item[Il Treno] Train. All players draw an extra card at the beginning of their turn.
+		\item[Maledizione] Curse. For the duration of the whole round, all cards are of \col{spades}.
+		\item[Mezzogiorno di Fuoco] High Noon. Each player loses one life every time they are about to
+			start their turn.
+		\item[Sermone] Sermon. Players may not use \card{Bang!} cards \emph{during their turn}. (They
+			may use them if it's not their turn.)
+		\item[Sparatoria] Crossfire. All players may play two \card{Bang!} cards during their turn.
+		\item[Sbornia] Hangover. For the duration of the whole round, all players lose their special
+			abilities.
+	\end{description}
+	
+	\section*{Characters}
+	
+	\begin{description}
+		\item[Apache Kid] Unaffected by cards of \col{diamonds}.
+		\item[Bart Cassidy] Whenever hit, draws a card from the deck.
+		\item[Belle Star] During her turn, other players' cards lying on the table have no effect.
+		\item[Bill Noface] At the beginning of his turn, he draws one card plus one card per each lost life.
+		\item[Black Jack] Always shows the second card he draws. If it's of \col{hearts} or \col{spades},
+			he draws an extra one.
+		\item[Calamity Janet] May use \card{Bang!} as \card{Missed!} and vice versa.
+		\item[Chuck Wengam] During his turn, he may decide to lose one life in exchange for
+			two cards from the deck.
+		\item[Doc Holyday] \emph{Once per turn}, he may shoot \card{Bang!} by discarding two cards from his hand.
+		\item[Elena Fuente] May use any card from her hand as \card{Missed!}.
+		\item[El Gringo] Whenever hit by a player, he takes one card from the hand of the attacker.
+		\item[Greg Digger] Whenever one of the other players dies, he gains two lives.
+		\item[Herb Hunter] Whenever one of the other players dies, he draws two cards from the deck.
+		\item[Jesse Jones] At the beginning of his turn, he may take the first card from the hand
+			of any other player.
+		\item[José Delgado] May discard two blue-bordered cards from his hand in exchange for two new cards
+			from the deck. This may be used only twice per turn.
+		\item[Jourdonnais] Whenever hit by a \card{Bang!}, he may draw one card from the deck.
+			If the card is of \col{hearts}, the hit becomes a miss. The card is discarded.
+		\item[Kit Carlson] When drawing two cards, he looks at the top three cards and chooses two to retain.
+		\item[Lucky Duke] Whenever drawing a card as an effect, he draws two and chooses which one to retain.
+		\item[Molly Stark] Whenever she plays a card outside of her turn, she draws another one from the deck.
+		\item[Paul Regret] Farther by 1 from all other players.
+		\item[Pat Brennan] Instead of drawing two cards from the deck, he may take any card from the table.
+		\item[Pedro Ramirez] May take the first card from the top of the heap of discarded cards.
+		\item[Pixie Pete] Draws an extra card at the beginning of his turn.
+		\item[Rose Doolan] Sees every other player closer by 1.
+		\item[Sean Mallory] When ending his turn, he may retain as much as 10 cards in the hand.
+		\item[Sid Ketchum] May discard two cards to add one life.
+		\item[Slab the Killer] Two \card{Missed!} cards are needed to deflect his \card{Bang!}.
+		\item[Suzy Lafayette] Whenever left with no cards in the hand, she may draw one from the deck.
+		\item[Tequila Joe] Gains 2 lives from a single \card{Beer}.
+		\item[Vera Custer] Every round, she may decide to gain the special abilities of any
+			of the other players.
+		\item[Vulture Sam] Whenever one of the other players dies, Vulture Sam takes all his cards.
+		\item[Willy the Kid] May use \card{Bang!} an unlimited number of times per turn.
+	\end{description}
+	
+	\section*{Playing cards}
+
+	\begin{description}
+		\item[Dinamite] Dynamite. When a player with a \card{Dynamite} in front of him is about
+			to start his turn, he must draw a card from the deck. If the card is 2 to 9 (inclusive)
+			of \col{spades}, the dynamite explodes and the player loses three lives. Otherwise,
+			the \card{Dynamite} is passed to the next player.
+		\item[Duello] Duel. The player challenges another player for a duel. The challenged player
+			chooses to respond with a \card{Bang!} or to lose a life. If he responds, both players alternate
+			in playing \card{Bang!} until one of them loses a life.
+		\item[Emporio] General store. For every player, one card is drawn from the deck and all cards
+			are put on the table, facing up. Beginning with the current player, all take turns to pick
+			one card from these.
+		\item[Indiani] Indians. All other players must either discard a \card{Bang!} or lose a life.
+		\item[Prigione] Prison. This card may be laid in front of any player. When that player is about
+			to begin their turn, they draw a card from the deck (and discard it). If the card is of
+			\col{hearts}, they may play, otherwise they skip the turn.
+		\item[Volcanic] Volcanic. Allows the owner to use an unlimited number of \card{Bang!}s per turn
+			\col{up to the distance of 1}.
+	\end{description}
+	
+\end{document}
